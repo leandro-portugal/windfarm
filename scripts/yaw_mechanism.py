@@ -17,5 +17,3 @@ class YawMechanism:
         
         return self.current_position
 
-sys = YawMechanism(tower_id = "GGP001", location = "Lagoa do Barro do Piauí", current_position = 30)
-sys.adjust_yaw(wind_direction=90)
