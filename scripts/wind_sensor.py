@@ -13,9 +13,13 @@ def capture_wind_data():
       api_key = os.getenv("VISUALCROSSING_API_KEY")
 
       cities = {
-        "Lagoa do Barro": "Lagoa do Barro do Piauí,BR",
-        "Queimada Nova": "Queimada Nova,BR",
-        "Dom Inocêncio": "Dom Inocêncio,BR"
+        "Lagoa do Barro" : "Lagoa do Barro do Piauí,BR",
+        "Queimada Nova" : "Queimada Nova,BR",
+        "Dom Inocêncio" : "Dom Inocêncio,BR",
+        "Sento Sé" : "Sento Sé,BR",
+        "Chuí" : "Chuí,BR",
+        "Santa Vitória do Palmar": "Santa Vitória do Palmar,BR",
+        "Casa Nova": "Casa Nova,BR"
       }
 
       current_date = datetime.today()
@@ -50,3 +54,6 @@ def capture_wind_data():
             wind_data[city] = {"error": "Missing wind data"}
 
       return wind_data
+
+data = capture_wind_data()
+print(data)
