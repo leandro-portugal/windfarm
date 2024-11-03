@@ -16,6 +16,7 @@ def hydraulic_fluid_sensor(turbine_id,operating_time_hours):
 
     return {
         "turbine_id": turbine_id,
+        "wear": wear_factor ,
         "operating_time_hours": operating_time_hours,
         "pressure_bar": round(pressure, 2),
         "temperature_celsius": round(temperature, 2)
