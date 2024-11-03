@@ -28,14 +28,3 @@ def gearbox_sensor(turbine_id, rotor_speed_rpm):
         "vibration_mm_s": round(vibration, 2)
     }
 
-# Exemplo de uso da função gearbox_sensor
-
-# Defina um ID para a turbina e a velocidade do rotor em RPM
-turbine_id = "Turbina_01"
-rotor_speed_rpm = 20  # Exemplo de velocidade do rotor
-
-# Chame a função gearbox_sensor
-result = gearbox_sensor(turbine_id, rotor_speed_rpm)
-
-# Exiba o resultado
-print(result)
